@@ -154,7 +154,7 @@ bot.on("message", async message => {
 		var params = msg.content.split(" ").slice(1);
 
 		message.guild.channels.find('name', 'updates').send({embed: {
-			color: 0x9f13f6
+			color: 0x9f13f6,
 			description: params.join(" ")
 		}});
 	}
