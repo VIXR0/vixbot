@@ -1,6 +1,6 @@
 //bot.js
 
-const Discord = require("Discord.js");
+const Discord = require("discord.js");
 const prefix = ".";
 const completemsg = "Thank you for verifying. Your role in Vixro's Lounge has been updated to Member. Feel free to look around and check out the rules!"
 const shortcode = (n) => {
