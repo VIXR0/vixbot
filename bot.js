@@ -103,11 +103,6 @@ bot.on("message", async message => {
 		message.channel.send(`${toMute.user.username} has been unmuted!`);
 	}
 
-	if(command === `${prefix}test`) {
-
-		message.guild.channels.find('name', 'bot-testing').send("Command `test` ran");
-	}
-
 	if(command === `${prefix}ping`) {
 
 		message.channel.send(`${bot.ping}ms :stopwatch:`);
