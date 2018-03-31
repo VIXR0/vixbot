@@ -1,7 +1,6 @@
 //bot.js
 
 const Discord = require("discord.js");
-const config = require('./config.json');
 const prefix = ".";
 const completemsg = "Thank you for verifying. Your role in Vixro's Lounge has been updated to Member. Feel free to look around and check out the rules!"
 const shortcode = (n) => {
@@ -159,7 +158,7 @@ bot.on("message", async message => {
 });
 
 bot.on('guildMemberAdd', member => {
-	if (member.user.bot || member.guild.id !== config.guild) return
+	if (member.user.bot || member.guild.id !== '429524438455943169') return
 	const welcome = `Welcome to Vixro's Lounge! To gain full access to the server, you must prove you are human. To do so, please reply to this DM with the following token: \`\`\` \nTOKEN-${token}\n \`\`\` Please note that this is CaSe-SeNsItIvE`
 	member.send(welcome)
 	member.user.token = token
