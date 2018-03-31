@@ -1,0 +1,8 @@
+{
+  "name": "vixbot",
+  "version": "1.0.0",
+  "description": "Vixro's Personal Bot",
+  "main": "bot.js",
+  "author": "Vixro",
+  "license": "ISC"
+}
