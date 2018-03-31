@@ -6,6 +6,6 @@
   "author": "Vixro",
   "license": "ISC",
   "dependencies": {
-    "discord": "^0.8.2"
+    "discord.js": "^0.8.2"
   }
 }
