@@ -150,7 +150,7 @@ bot.on("message", async message => {
 	}
 
 	if(command === `${prefix}update`) {
-		var command = msg.content.split(" ")[0].slice(prefix.length);
+		var commandud = msg.content.split(" ")[0].slice(prefix.length);
 		var params = msg.content.split(" ").slice(1);
 
 		message.guild.channels.find('name', 'updates').send({embed: {
