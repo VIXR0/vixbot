@@ -186,4 +186,4 @@ bot.on('message', (message) => {
 		.catch(console.error)
 });
 
-bot.login("process.env.BOT_TOKEN");
+bot.login(process.env.BOT_TOKEN);
