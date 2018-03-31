@@ -134,7 +134,7 @@ bot.on("message", async message => {
 		let embed = new Discord.RichEmbed()
 			.setFooter(`Info requested by ${message.author.username}`)
 			.setTitle("Command List")
-			.setThumbnail(message.bot.iconURL)
+			.setThumbnail(bot.iconURL)
 			.setColor("#9f13f6")
 			.addField("userinfo", "Shows user information about the current user", "true")
 			.addField("serverinfo", "Shows server information about the current server", "true")
