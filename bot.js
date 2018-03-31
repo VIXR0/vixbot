@@ -136,14 +136,14 @@ bot.on("message", async message => {
 			.setTitle("Command List")
 			.setThumbnail('https://i.imgur.com/OKTmpJA.jpg')
 			.setColor("#9f13f6")
-			.addField("userinfo", "Shows user information about the current user", "true")
-			.addField("serverinfo", "Shows server information about the current server", "true")
-			.addField("mute", ".mute {user} | Mute a user", "true")
-			.addField("unmute", ".unmute {user} | Unmute a user", "true")
-			.addField("warn", ".warn {user} | Warn a user", "true")
-			.addField("ping", "The bot's ping to the discord servers", "true")
-			.addField("status", "Bot uptime", "true")
-			.addField("dice", "Rolls a dice", "true")
+			.addField(".userinfo", "*Shows user information about the current user*", "true")
+			.addField(".serverinfo", "*Shows server information about the current server*", "true")
+			.addField(".mute", "*.mute {user} | Mute a user*", "true")
+			.addField(".unmute", "*.unmute {user} | Unmute a user*", "true")
+			.addField(".warn", "*.warn {user} | Warn a user*", "true")
+			.addField(".ping", "*The bot's ping to the discord servers*", "true")
+			.addField(".status", "*Bot uptime*", "true")
+			.addField(".dice", "*Rolls a dice*", "true")
 
 		message.channel.send("I have sent the help docs to your DM's!");
 		message.author.send(embed);
