@@ -4,5 +4,8 @@
   "description": "Vixro's Personal Bot",
   "main": "bot.js",
   "author": "Vixro",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord": "^0.8.2"
+  }
 }
