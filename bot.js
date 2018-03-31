@@ -10,7 +10,6 @@ const shortcode = (n) => {
 	return text;
 }
 const token = shortcode(8)
-const urban = module.require("urban");
 
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
