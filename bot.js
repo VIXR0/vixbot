@@ -187,7 +187,7 @@ bot.on('guildMemberAdd', member => {
 	member.user.token = token
 	const channel = member.guild.channels.find('name', 'member-log');
 	if (!channel) return;
-	channel.send(`Welcome to Vixro's Lounge, ${member}! Please check your DM's to verify your account!`);
+	channel.send(`Welcome to Vixro's Lounge, ${member}! Please check your DM's to verify your account! Also check #how-to-verify to see all the steps.`);
 });
 
 const verifymsg = `TOKEN-${token}`
