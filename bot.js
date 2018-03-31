@@ -149,6 +149,16 @@ bot.on("message", async message => {
 		message.author.send(embed);
 	}
 
+	if(command === `${prefix}update`) {
+		var command = msg.content.split(" ")[0].slice(prefix.length);
+		var params = msg.content.split(" ").slice(1);
+
+		message.guild.channels.find('name', 'updates').send({embed: {
+			color: #9f13f6
+			description: params.join(" ")
+		}});
+	}
+
 	if(command === `${prefix}warn`) {
 
 		if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("You do not have the right permissions!");
