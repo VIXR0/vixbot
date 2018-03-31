@@ -150,8 +150,8 @@ bot.on("message", async message => {
 	}
 
 	if(command === `${prefix}update`) {
-		var commandud = msg.content.split(" ")[0].slice(prefix.length);
-		var params = msg.content.split(" ").slice(1);
+		var commandud = message.content.split(" ")[0].slice(prefix.length);
+		var params = message.content.split(" ").slice(1);
 
 		message.guild.channels.find('name', 'updates').send({embed: {
 			color: 0x9f13f6,
