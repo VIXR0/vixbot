@@ -25,7 +25,7 @@ var dice = [
 
 bot.on("ready", async () => {
 	console.log(`Bot is online! Username: ${bot.user.username}`);
-	bot.user.setActivity('my master', { type: 'LISTENING' });
+	bot.user.setActivity('your every move...', { type: 'WATCHING' });
 });
 
 bot.on("message", async message => {
